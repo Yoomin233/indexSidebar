@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexSidebar</title>
+	<style>
+		html, body {
+			margin:0;
+			padding:0;
+		}
+		div.sideBar{
+			position: fixed;
+			right:0;
+			top:0;
+			width:10%;
+			height: 100vh;
+			display: flex;
+			flex-direction:column;
+			font-size:3em;
+		}
+		div.sideBar > div {
+			height: 100%;
+			text-align: center;
+		}
+		div.sideBar > div:last-of-type {
+			position: absolute;
+			width: 1.5em;
+			height: 1.5em;
+			line-height: 1.5em;
+			text-align: center;
+			transform: translate3d(-1.5em, 0, 0);
+			font-size:2em;
+			opacity:0;
+			transition: opacity .3s ease, top .1s linear;
+			color:#eee;
+			background-color: rgba(0, 0, 0, 0.4);
+			border-radius:100%;
+		}
+		div.content {
+			width:100%;
+			height: 100vh;
+			overflow-y: scroll;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="content">
+			<p data-index='A'>A<br/>some random context for letter A...<br>type some nonesence for some extra space...</p>
+			<p data-index='B'>B<br/>some random context for letter B...<br>type some nonesence for some extra space...</p>
+			<p data-index='C'>C<br/>some random context for letter C...<br>type some nonesence for some extra space...</p>
+			<p data-index='D'>D<br/>some random context for letter D...<br>type some nonesence for some extra space...</p>
+			<p data-index='E'>E<br/>some random context for letter E...<br>type some nonesence for some extra space...</p>
+			<p data-index='F'>F<br/>some random context for letter F...<br>type some nonesence for some extra space...</p>
+			<p data-index='G'>G<br/>some random context for letter G...<br>type some nonesence for some extra space...</p>
+			<p data-index='H'>H<br/>some random context for letter H...<br>type some nonesence for some extra space...</p>
+			<p data-index='I'>I<br/>some random context for letter I...<br>type some nonesence for some extra space...</p>
+			<p data-index='J'>J<br/>some random context for letter J...<br>type some nonesence for some extra space...</p>
+			<p data-index='K'>K<br/>some random context for letter K...<br>type some nonesence for some extra space...</p>
+			<p data-index='L'>L<br/>some random context for letter L...<br>type some nonesence for some extra space...</p>
+			<p data-index='M'>M<br/>some random context for letter M...<br>type some nonesence for some extra space...</p>
+			<p data-index='N'>N<br/>some random context for letter N...<br>type some nonesence for some extra space...</p>
+			<p data-index='O'>O<br/>some random context for letter O...<br>type some nonesence for some extra space...</p>
+			<p data-index='P'>P<br/>some random context for letter P...<br>type some nonesence for some extra space...</p>
+			<p data-index='Q'>Q<br/>some random context for letter Q...<br>type some nonesence for some extra space...</p>
+			<p data-index='R'>R<br/>some random context for letter R...<br>type some nonesence for some extra space...</p>
+			<p data-index='S'>S<br/>some random context for letter S...<br>type some nonesence for some extra space...</p>
+			<p data-index='T'>T<br/>some random context for letter T...<br>type some nonesence for some extra space...</p>
+			<p data-index='U'>U<br/>some random context for letter U...<br>type some nonesence for some extra space...</p>
+			<p data-index='V'>V<br/>some random context for letter V...<br>type some nonesence for some extra space...</p>
+			<p data-index='W'>W<br/>some random context for letter W...<br>type some nonesence for some extra space...</p>
+			<p data-index='X'>X<br/>some random context for letter X...<br>type some nonesence for some extra space...</p>
+			<p data-index='Y'>Y<br/>some random context for letter Y...<br>type some nonesence for some extra space...</p>
+			<p data-index='Z'>Z<br/>some random context for letter Z...<br>type some nonesence for some extra space...</p>
+		</div>
+	</div>
+	<script src="indexSideBar.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
